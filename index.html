@@ -86,6 +86,7 @@
                 price: 'Buy',
                 originalPrice: '$55.00',
                 videoUrl: './videos/CP1.mp4',
+                videoUrl1: './videos/CP1.mp4',
                 checkoutUrl: '#PAYMENT_LINK_CP1',
                 benefits: ['15 Full HD Videos', 'Lifetime Access', 'Basic Support'],
                 tag: 'MOST AFFORDABLE'
@@ -97,6 +98,7 @@
                 price: 'Buy',
                 originalPrice: '$69.00',
                 videoUrl: './videos/CP2.mp4',
+                videoUrl1: './videos/CP1.mp4',
                 checkoutUrl: '#PAYMENT_LINK_CP2',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
@@ -108,6 +110,7 @@
                 price: 'Buy',
                 originalPrice: '$119.00',
                 videoUrl: './videos/CP3.mp4',
+                videoUrl1: './videos/CP1.mp4',
                 checkoutUrl: '#PAYMENT_LINK_CP3',
                 benefits: ['Full 2025 Collection', 'Priority on New Releases', '24/7 Premium Support'],
                 tag: 'ULTRA PREMIUM'
@@ -119,6 +122,7 @@
                 price: 'Buy',
                 originalPrice: '$69.00',
                 videoUrl: './videos/CP4.mp4',
+                videoUrl1: './videos/CP1.mp4',
                 checkoutUrl: '#PAYMENT_LINK_CP2',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
@@ -130,6 +134,7 @@
                 price: 'Buy',
                 originalPrice: '$69.00',
                 videoUrl: './videos/ALLteens.mp4',
+                videoUrl1: './videos/CP1.mp4',
                 checkoutUrl: '#PAYMENT_LINK_CP2',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
@@ -141,6 +146,7 @@
                 price: 'Buy',
                 originalPrice: '$69.00',
                 videoUrl: './videos/AmeliaBlonde.mp4',
+                videoUrl1: './videos/CP1.mp4',
                 checkoutUrl: '#PAYMENT_LINK_CP2',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
@@ -205,6 +211,13 @@
                             poster=""
                         >
                             <source src=${pack.videoUrl} type="video/mp4" />
+                        </video>
+                         <video 
+                            className="w-full aspect-video object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                            controls
+                            poster=""
+                        >
+                            <source src=${pack.videoUrl1} type="video/mp4" />
                         </video>
                         ${pack.tag && html`
                             <div className="absolute top-4 left-4 bg-rose-600 text-[10px] font-black px-3 py-1 rounded-full text-white shadow-xl uppercase tracking-tighter">
