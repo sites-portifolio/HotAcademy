@@ -113,66 +113,42 @@
 
         const html = htm.bind(React.createElement);
 
-        const TELEGRAM_LINK = "https://t.me/HotAcademySupport";
+        const TELEGRAM_LINK = "https://t.me/Blake_Seller24";
 
         const PACKS = [
             {
                 id: 'CP1',
                 name: 'Silver Pack CP1',
                 description: 'The gateway to the Hot Academy world. A premium selection of trending videos.',
-                price: 'Buy',
-                originalPrice: '$55.00',
+                price: '€55.00',
+                originalPrice: '€75.00',
                 videoUrl: './videos/CP1.mp4',
                 videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP1',
+                checkoutUrl: 'https://buy.stripe.com/fZu4gA2iq8p8dzR2rv3840f',
                 benefits: ['15 Full HD Videos', 'Lifetime Access', 'Basic Support'],
                 tag: 'MOST AFFORDABLE'
-            },
-            {
-                id: 'CP2',
-                name: 'Gold Pack CP2',
-                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
-                videoUrl: './videos/CP2.mp4',
-                videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
-                benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
-                tag: 'BEST SELLER'
-            },
-            {
-                id: 'CP3',
-                name: 'Diamond Pack CP3',
-                description: 'The definitive experience. Unlock the entire 2025 archive instantly.',
-                price: 'Buy',
-                originalPrice: '$119.00',
-                videoUrl: './videos/CP3.mp4',
-                videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP3',
-                benefits: ['Full 2025 Collection', 'Priority on New Releases', '24/7 Premium Support'],
-                tag: 'ULTRA PREMIUM'
-            },
-            {
-                id: 'CP4',
-                name: 'Platinum Pack CP4',
-                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
-                videoUrl: './videos/CP4.mp4',
-                videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
-                benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
-                tag: 'BEST SELLER'
             },
             {
                 id: 'AT',
                 name: 'ALL teens',
                 description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
+                price: '€75.00',
+                originalPrice: '€85.00',
                 videoUrl: './videos/ALLteens.mp4',
                 videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
+                checkoutUrl: 'https://buy.stripe.com/6oU7sM4qyaxg0N52rv3840l',
+                benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
+                tag: 'BEST SELLER'
+            },
+            {
+                id: 'CP2',
+                name: 'Gold Pack CP2',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: '€60.00',
+                originalPrice: '€85.00',
+                videoUrl: './videos/CP2.mp4',
+                videoUrl1: './videos/CP1.mp4',
+                checkoutUrl: 'https://buy.stripe.com/cNi8wQ8GOaxg9jBd693840g',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
             },
@@ -180,23 +156,47 @@
                 id: 'AB',
                 name: 'Amelia Blonde',
                 description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
+                price: '€45.00',
+                originalPrice: '€69.00',
                 videoUrl: './videos/AmeliaBlonde.mp4',
                 videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
+                checkoutUrl: 'https://buy.stripe.com/dRm14o1em20K67p1nr38402',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
+            },
+            {
+                id: 'CP3',
+                name: 'Diamond Pack CP3',
+                description: 'The definitive experience. Unlock the entire 2025 archive instantly.',
+                price: '€55.00',
+                originalPrice: '€75.00',
+                videoUrl: './videos/CP3.mp4',
+                videoUrl1: './videos/CP1.mp4',
+                checkoutUrl: 'https://buy.stripe.com/fZu4gA2iq8p8dzR2rv3840f',
+                benefits: ['Full 2025 Collection', 'Priority on New Releases', '24/7 Premium Support'],
+                tag: 'ULTRA PREMIUM'
             },
             {
                 id: 'AC',
                 name: 'ALL teens',
                 description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
+                price: '€250.00',
+                originalPrice: '€300.00',
                 videoUrl: './videos/ALL CONTENT.mp4',
                 videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
+                checkoutUrl: 'https://buy.stripe.com/14AcN6aOW7l48fxfeh3840j',
+                benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
+                tag: 'BEST SELLER'
+            },
+            {
+                id: 'CP4',
+                name: 'Platinum Pack CP4',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: '€60.00',
+                originalPrice: '€85.00',
+                videoUrl: './videos/CP4.mp4',
+                videoUrl1: './videos/CP1.mp4',
+                checkoutUrl: 'https://buy.stripe.com/cNi8wQ8GOaxg9jBd693840g',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
             },
@@ -204,11 +204,11 @@
                 id: 'AT',
                 name: 'ALL teens',
                 description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
+                price: '€80.00',
+                originalPrice: '$100.00',
                 videoUrl: './videos/AllCP.mp4',
                 videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
+                checkoutUrl: 'https://buy.stripe.com/3cI14ocX4gVE67pfeh38409',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
             },
@@ -216,11 +216,11 @@
                 id: 'AT',
                 name: 'ALL teens',
                 description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
-                price: 'Buy',
-                originalPrice: '$69.00',
+                price: '€30.00',
+                originalPrice: '€60.00',
                 videoUrl: './videos/DesireeGarcia.mp4',
                 videoUrl1: './videos/CP1.mp4',
-                checkoutUrl: '#PAYMENT_LINK_CP2',
+                checkoutUrl: 'https://buy.stripe.com/5kQ3cw6yG20K0N53vz3840e',
                 benefits: ['35 4K Videos', 'Exclusive Behind-the-Scenes', 'VIP Telegram Group'],
                 tag: 'BEST SELLER'
             }
@@ -391,7 +391,16 @@
                         <div className="max-w-xl text-center md:text-left">
                             <h2 className="text-4xl md:text-5xl font-black font-poppins mb-6 leading-tight uppercase italic">Questions? Talk to <br />a Specialist.</h2>
                             <p className="text-zinc-400 text-lg font-medium">
-                                Our Telegram support is fast, human, and 100% anonymous. We are online now.
+                                "Our Telegram support is fast, human, and 100% anonymous. We are online now."
+                            </p>
+                             <p className="text-zinc-400 text-lg font-medium">
+                                "If you need help, contact us via Telegram."
+                            </p>
+                            <p className="text-zinc-400 text-lg font-medium">
+                                "If a link is down and you can’t access the content on Mega, send a message on Telegram."
+                            </p>
+                            <p className="text-zinc-400 text-lg font-medium">
+                                "You want to pay with paypal or cryptocurrencies send a message to support on telegram."
                             </p>
                         </div>
                         <a 
