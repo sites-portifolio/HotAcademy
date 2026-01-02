@@ -11,8 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700;900&display=swap"
         rel="stylesheet">
-    <meta name="monetag" content="4163423d04cd2de50ab4f7b90ac8fee1">
-    <style>
+   <meta name="monetag" content="4163423d04cd2de50ab4f7b90ac8fee1">
+   <style>
         :root {
             --primary: #f43f5e;
             --primary-hover: #e11d48;
@@ -372,30 +372,7 @@
         `;
 
         const Hero = () => html`
-            <section className="relative pt-40 pb-20 overflow-hidden">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-rose-600/20 blur-[120px] rounded-full pointer-events-none -z-10"></div>
-                <div className="container mx-auto px-4 text-center">
-                    <div className="inline-block px-4 py-1.5 mb-8 rounded-full bg-rose-950/30 border border-rose-500/30 text-rose-500 text-xs font-bold tracking-[0.2em] uppercase">
-                        🔥 Major 2025 Collections
-                    </div>
-                    <h1 className="text-5xl md:text-8xl font-black font-poppins mb-8 leading-tight tracking-tight">
-                        Dare to See the <br />
-                        <span className="gradient-text italic">Unreachable.</span>
-                    </h1>
-                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-400 mb-12 font-medium leading-relaxed">
-                        Unlock access to the most restricted and exclusive content on the market now. 
-                        Cinematic quality for those who don't settle for the ordinary.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-5 justify-center">
-                        <a href="#packs" className="px-10 py-5 bg-rose-600 hover:bg-rose-700 text-white font-black rounded-2xl transition-all hover:scale-105 glow-red text-lg uppercase tracking-wide">
-                            Explore Packs
-                        </a>
-                        <a href=${TELEGRAM_LINK} target="_blank" className="px-10 py-5 bg-zinc-900 hover:bg-zinc-800 text-white font-black rounded-2xl border border-zinc-800 transition-all text-lg uppercase tracking-wide">
-                            VIP Support
-                        </a>
-                    </div>
-                </div>
-            </section>
+            
         `;
 
         const PackCard = ({ pack }) => html`
